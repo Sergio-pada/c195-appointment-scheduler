@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.c195.Controller.AppointmentController">
+    <VBox alignment="CENTER">
+
+        <Label text="Appointments" />
+
+
+        <TableView fx:id="appointmentsTableView" prefHeight="400">
+            <columns>
+                <TableColumn text="ID" fx:id="appointmentIdColumn" />
+                <TableColumn text="Title" fx:id="titleColumn" />
+                <TableColumn text="Description" fx:id="descriptionColumn" />
+                <TableColumn text="Location" fx:id="locationColumn" />
+                <TableColumn text="Type" fx:id="typeColumn" />
+                <TableColumn text="Start" fx:id="startColumn"/>
+                <TableColumn text="End" fx:id="endColumn" />
+                <TableColumn text="Customer ID" fx:id="customerIdColumn" />
+                <TableColumn text="User ID" fx:id="userIdColumn" />
+                <TableColumn text="Contact ID" fx:id="contactIdColumn"/>
+            </columns>
+        </TableView>
+
+        <HBox alignment="CENTER">
+            <Button text="All" onAction="#showAllAppointments" />
+            <Button text="Week" onAction="#showWeekAppointments" />
+            <Button text="Month" onAction="#showMonthAppointments" />
+        </HBox>
+        <HBox alignment="CENTER">
+            <Button text="New" onAction="#newAppointment" />
+            <Button text="Delete" onAction="#deleteAppointment" />
+            <Button text="Edit" onAction="#editAppointment" />
+        </HBox>
+        <Button text="Back" onAction="#mainMenu" />
+
+    </VBox>
+</AnchorPane>

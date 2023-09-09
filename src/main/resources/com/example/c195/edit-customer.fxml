@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.c195.Controller.EditCustomerController">
+    <VBox alignment="CENTER" spacing="10">
+
+        <Label style="-fx-font-size: 18pt;" text="Customer Details" />
+
+        <GridPane>
+            <Label text="ID:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <Label text="Name:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <Label text="Address:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <Label text="Postal Code:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+            <Label text="Phone Number:" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+            <Label text="Country:" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+            <Label text="Division:" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+
+            <TextField fx:id="idField" GridPane.columnIndex="1" GridPane.rowIndex="0" editable="false" />
+            <TextField fx:id="nameField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="addressField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="postalCodeField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="phoneNumberField" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <ComboBox fx:id="countryComboBox" prefHeight="26.0" prefWidth="159.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <ComboBox fx:id="divisionComboBox" prefHeight="26.0" prefWidth="159.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <columnConstraints>
+                <ColumnConstraints />
+                <ColumnConstraints />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+            </rowConstraints>
+
+        </GridPane>
+
+        <HBox spacing="10">
+            <Button onAction="#cancelAction" text="Cancel" />
+            <Button onAction="#saveAction" text="Save" />
+        </HBox>
+    </VBox>
+</AnchorPane>

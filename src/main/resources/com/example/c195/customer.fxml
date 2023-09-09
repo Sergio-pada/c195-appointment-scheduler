@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.c195.Controller.CustomerController">
+    <VBox alignment="CENTER">
+
+        <Label text="Customers" />
+
+
+        <TableView fx:id="customersTableView" prefHeight="400">
+            <columns>
+                <TableColumn text="ID" fx:id="customerIdColumn" />
+                <TableColumn text="Name" fx:id="nameColumn" />
+                <TableColumn text="Address" fx:id="addressColumn" />
+                <TableColumn text="Postal Code" fx:id="postalCodeColumn" />
+                <TableColumn text="Phone Number" fx:id="phoneColumn" />
+                <TableColumn text="Division ID" fx:id="divIdColumn"/>
+
+            </columns>
+        </TableView>
+
+
+        <HBox alignment="CENTER">
+            <Button text="New" onAction="#newCustomer" />
+            <Button text="Delete" onAction="#deleteCustomer" />
+            <Button text="Edit" onAction="#editCustomer" />
+        </HBox>
+        <Button text="Back" onAction="#mainMenu" />
+
+    </VBox>
+</AnchorPane>

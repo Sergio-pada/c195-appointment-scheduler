@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.c195.Controller.EditAppointmentController">
+    <VBox alignment="CENTER" spacing="10">
+
+        <Label text="Appointment Details" style="-fx-font-size: 18pt;" />
+
+        <GridPane>
+            <Label text="Appointment ID:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <Label text="Title:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <Label text="Description:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <Label text="Location:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+            <Label text="Type:" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+            <Label text="Start Date:" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+            <Label text="End Date:" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+            <Label text="User ID:" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+            <Label text="Contact ID:" GridPane.columnIndex="0" GridPane.rowIndex="8" />
+            <Label text="Customer:" GridPane.columnIndex="0" GridPane.rowIndex="9" />
+
+            <TextField fx:id="appointmentIdField" GridPane.columnIndex="1" GridPane.rowIndex="0" editable="false" />
+            <TextField fx:id="titleField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="descriptionField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="locationField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="typeField" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="startDateField" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="endDateField" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="userIdField" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField fx:id="contactIdField" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <ComboBox fx:id="customerComboBox" GridPane.columnIndex="1" GridPane.rowIndex="9"/>
+        </GridPane>
+
+        <HBox spacing="10">
+            <Button text="Cancel" onAction="#cancelAction" />
+            <Button text="Save" onAction="#saveAction" />
+        </HBox>
+    </VBox>
+</AnchorPane>
