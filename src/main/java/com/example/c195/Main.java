@@ -15,12 +15,14 @@ public class Main extends Application {
     public static List<Appointment> appointments = AppointmentQuery.getAllAppointments();//Public because it's used in AppointmentsController
     public static List<Customer> customers = CustomerQuery.getAllCustomers();//Public because it's used in AppointmentsController
     public static List<FirstLevelDivision> divisions = FirstLevelDivisionQuery.getAllDivisions();
+    public static List<Contact> contacts = ContactQuery.getAllContacts();
+
     public static void main(String[] args) throws SQLException {
 
         JDBC.openConnection();
 
         // Other object lists
-        List<Contact> contacts = ContactQuery.getAllContacts();
+
         List<Country> countries = CountryQuery.getAllCountries();
 
         List<User> users = UserQuery.getAllUsers();
@@ -31,7 +33,7 @@ public class Main extends Application {
     }
     @Override
     public void start(Stage stage) throws IOException, SQLException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("login.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("report2.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Login");
         stage.setScene(scene);
