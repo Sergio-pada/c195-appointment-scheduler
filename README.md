@@ -2,6 +2,8 @@
 
 ## Overview
 
+![Image of application login screen]([https://github.com/Sergio-pada//blob/[branch]/image.jpg?raw=true](https://github.com/Sergio-pada/c195-appointment-scheduler/blob/main/appointmentscheduler1.png))
+c195-appointment-scheduler/appointmentscheduler1.png
 The Appointment Tracker is a desktop application built in Java and JavaFX, designed to help organizations manage and track appointments for customers and employees across multiple countries. The application utilizes a MySQL Server for data storage and implements a robust user authentication system. It is capable of handling users across different time zones and countries through integrated time zone conversion.
 
 ## Features
