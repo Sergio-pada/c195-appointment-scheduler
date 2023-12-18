@@ -11,6 +11,7 @@ The Appointment Tracker is a desktop application built in Java and JavaFX, desig
 - **User Authentication System**: Securely manage user access with a built-in authentication system.
   
 - **Customer Management**: Easily add, view, and update customer information.
+  ![Image of application customer screen](https://github.com/Sergio-pada/c195-appointment-scheduler/blob/main/appointmentscheduler2.png)
 
 - **Appointment Tracking**: Keep track of appointments associated with various customers and employees.
 
